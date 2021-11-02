@@ -1,0 +1,146 @@
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+}
+
+#background-video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header #help {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.introduction {
+    margin: 0;
+}
+
+label b {
+    color: tomato;
+}
+
+.glass_container {
+    width: 280px;
+    height: 450px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#blocked {
+    width: 77px;
+    height: 77px;
+    position: fixed;
+    bottom: 40px;
+    left: 120px;
+    cursor: not-allowed;
+    z-index: 1;
+}
+
+.blocked-removed {
+    z-index: -1;
+    display: none;
+}
+
+#gift {
+    width: 77px;
+    height: 77px;
+    position: fixed;
+    bottom: 40px;
+    left: 120px;
+    cursor: pointer;
+}
+
+.gift-disponible {
+    animation: wiggle 2s linear infinite;
+}
+
+.input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkbox_container {
+    margin-top: 10px;
+}
+
+.input--checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.input--checkbox label,
+.input--checkbox input {
+    cursor: pointer;
+}
+
+.input--date input {
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 15px;
+    font-size: 10px;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  } 

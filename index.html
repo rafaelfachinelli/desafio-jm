@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.png" />
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="./assets/background-video.mp4" type="video/mp4">
+    </video>
+    <main class="content">
+        <div class="glass_container">
+            <header>
+                <h3 class="title">Desafio</h3>
+                <img id="help" src="./assets/help.png" />
+            </header>
+
+            <p class="introduction">
+                Responda as seguintes perguntas corretamente para abrir o presente:
+            </p>
+
+            <div class="input">
+                <label for="subscribe-date">Qual foi o efeito da batata que o <b>"Weebnester"</b> escolheu logo quando entrou na live da Twitch pela primeira vez?</label>
+                <div class="checkbox_container">
+                    <div class="input--checkbox">
+                        <input name="potato-effect" id="potato-effect-1" type="radio" value="Festiva" />
+                        <label for="potato-effect-1">Festiva</label>
+                    </div>
+                    <div class="input--checkbox">
+                        <input name="potato-effect" id="potato-effect-2" type="radio" value="Vou ao shopping" />
+                        <label for="potato-effect-2">Vou ao shopping</label>
+                    </div>
+                    <div class="input--checkbox">
+                        <input name="potato-effect" id="potato-effect-3" type="radio" value="Russa" />
+                        <label for="potato-effect-3">Russa</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input--date">
+                <label for="subscribe-date">Qual foi a data que o <b>"Weebnester"</b> se inscreveu no canal da Twitch?</label>
+                <input name="subscribe-date" id="subscribe-date" type="date" />
+            </div>
+            
+            <div>
+                <img id="blocked" src="./assets/blocked.jpg" />
+                <a id="" href="./assets/o-verdadeiro-amor.png" download="o-verdadeiro-amor.png" target="_blank">
+                    <img id="gift" src="./assets/gift.png" />
+                </a>
+            </div>
+            
+            <footer>
+                Criado por Rafael Fachinelli • 02/11/2021
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
